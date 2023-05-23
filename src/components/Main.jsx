@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import dummyContacts from '../dummyData/index.js';
 
 
@@ -12,9 +12,9 @@ const Main = () => {
       </div>
       <div id="container">
         {
-        contacts.map(contact => {
-          return contact.name;
-        }) }</div>
+          contacts.map(contact => {
+            return contact.name;
+          })}</div>
     </div>
   );
 };
