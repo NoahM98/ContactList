@@ -5,6 +5,7 @@ import ContactList from './ContactList';
 
 const Main = () => {
   const [contacts, setContacts] = useState([]);
+  const [selectedContact, setSelectedContact] = useState({});
 
   const getContacts = async () => {
     try {
@@ -16,13 +17,16 @@ const Main = () => {
     }
   }
   useEffect(getContacts, []);
+  const selectContact = async (contactId) => {
+    
+  }
   return (
     <div id="main">
       <div id="navbar">
         <div>Contact List</div>
       </div>
       <div id="container">
-        <ContactList contacts={contacts} />
+        <ContactList contacts={contacts} selectContact={selectContact}/>
       </div>
     </div>
   );

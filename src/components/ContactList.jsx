@@ -12,7 +12,7 @@ const ContactList = (props) => {
           <th>Phone</th>
           <th>Email</th>
         </tr>
-        <ContactRow contacts={contacts} />
+        <ContactRow contacts={contacts} selectContact={props.selectContact}/>
       </tbody>
     </table>
   )
